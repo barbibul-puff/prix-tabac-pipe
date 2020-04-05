@@ -2,1034 +2,1096 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Prix du tabac à pipe en France</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Prix du tabac à pipe en France</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
+  <div class="container">
 
-            <h1>Prix des tabacs à pipe en France</h1>
-            <h3>Dernière mise à jour : 1er mars 2020</h3>
-            <p>Basé sur les données extraites de : <a
-                    href="https://www.douane.gouv.fr/la-douane/opendata/categories/tabacs-manufactures/homologation-des-prix-arretes">https://www.douane.gouv.fr/la-douane/opendata/categories/tabacs-manufactures/homologation-des-prix-arretes</a>
-            </p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="row">
-            <table id="data" class="display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>Fournisseur</th>
-                        <th>Nom</th>
-                        <th>Ancien prix</th>
-                        <th>Nouveau Prix</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Camel Pipe Tobacco Coupe Large (boîte carrée), en 67 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Winston Pipe Tobacco Coupe Large (boîte carrée), en 35,5 g</td>
-                    <td>10,00</td>
-                    <td>10,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben ice coupe large (pot), en 50 g</td>
-                    <td></td>
-                    <td>12,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Amiral Big Ben coupe large, en 30 g</td>
-                    <td>6,60</td>
-                    <td>6,60</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben coupe large (blague), en 20 g</td>
-                    <td>4,40</td>
-                    <td>4,40</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben coupe large (blague), en 25 g</td>
-                    <td>5,50</td>
-                    <td>5,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben coupe large (blague), en 30 g</td>
-                    <td>6,60</td>
-                    <td>6,60</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben coupe large (pot), en 70 g</td>
-                    <td>15,00</td>
-                    <td>15,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben ice coupe large (blague), en 30 g</td>
-                    <td>7,30</td>
-                    <td>7,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben ice coupe large (pot), en 70 g</td>
-                    <td>17,00</td>
-                    <td>17,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Big Ben ice coupe large, en 30 g</td>
-                    <td>7,30</td>
-                    <td>7,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>7 Seas original blend, en 40 g</td>
-                    <td>11,40</td>
-                    <td>12,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>7 Seas regular blend, en 40 g</td>
-                    <td>11,40</td>
-                    <td>12,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>7 Seas Royal blend, en 40 g</td>
-                    <td>11,40</td>
-                    <td>12,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Bistro, en 30 g</td>
-                    <td>7,50</td>
-                    <td>8,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Bistro, en 40 g</td>
-                    <td>10,00</td>
-                    <td>10,65</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Bistro Noir, en 40 g</td>
-                    <td>10,00</td>
-                    <td>10,65</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Bistro Noir, en 30 g</td>
-                    <td>7,50</td>
-                    <td>8,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Bistro Rouge, en 30 g</td>
-                    <td>7,50</td>
-                    <td>8,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Brookfield n°1, en 50 g</td>
-                    <td>12,30</td>
-                    <td>13,20</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Chevalier, en 30 g</td>
-                    <td>7,20</td>
-                    <td>7,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Classic Loose Cut, en 50 g</td>
-                    <td>14,50</td>
-                    <td>15,40</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Golden blend's n°1, en 50 g</td>
-                    <td>13,10</td>
-                    <td>14,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Golden blend's n°2, en 50 g</td>
-                    <td>13,10</td>
-                    <td>14,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Golden blend's n°3, en 50 g</td>
-                    <td>13,10</td>
-                    <td>14,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>J B R Adventure, en 50 g</td>
-                    <td>12,30</td>
-                    <td>13,20</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Original Choice tabac à pipe, en 40 g</td>
-                    <td>14,50</td>
-                    <td>15,10</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Radford's Caribbean blend, en 50 g</td>
-                    <td>12,40</td>
-                    <td>13,30</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Radford's Scottish blend, en 50 g</td>
-                    <td>12,40</td>
-                    <td>13,30</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Thomas Radford Sunday's Fantasy, en 50 g</td>
-                    <td>15,50</td>
-                    <td>16,30</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>1637 coupe large, en 40 g</td>
-                    <td>11,40</td>
-                    <td>11,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>1637 coupe large en blague, en 40 g</td>
-                    <td>11,40</td>
-                    <td>11,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Amphora full, en 50 g</td>
-                    <td>15,00</td>
-                    <td>15,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Amsterdamer, en 40 g</td>
-                    <td>11,60</td>
-                    <td>12,20</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Backwoods Blue, en 30 g</td>
-                    <td>6,00</td>
-                    <td>6,40</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Backwoods Red, en 150 g</td>
-                    <td>30,00</td>
-                    <td>32,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Backwoods Red, en 30 g</td>
-                    <td>6,00</td>
-                    <td>6,40</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Burton Red pipe tobacco, en 80 g</td>
-                    <td>16,80</td>
-                    <td>17,60</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Burton Red pipe tobacco, en 30 g</td>
-                    <td>6,30</td>
-                    <td>6,60</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Caporal (blague), en 40 g</td>
-                    <td>11,60</td>
-                    <td>12,20</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Caporal export, en 40 g</td>
-                    <td>12,90</td>
-                    <td>13,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Clan Hollandia, en 50 g</td>
-                    <td>13,40</td>
-                    <td>14,70</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Clan original (par 5), en 30 g</td>
-                    <td>9,00</td>
-                    <td>9,85</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Clan original (par 5), en 50 g</td>
-                    <td>15,00</td>
-                    <td>16,40</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Clan Tradition, en 50 g</td>
-                    <td>13,50</td>
-                    <td>14,90</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Frérot blond l'Authentique, en 120 g</td>
-                    <td>27,00</td>
-                    <td>30,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Le Supérieur, en 40 g</td>
-                    <td>12,90</td>
-                    <td>13,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Saint Claude, en 40 g</td>
-                    <td>13,00</td>
-                    <td>13,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Scaferlati bleu (blague), en 40 g</td>
-                    <td>13,00</td>
-                    <td>13,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Scaferlati vert (blague), en 40 g</td>
-                    <td>13,00</td>
-                    <td>13,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Schippers speciaal (par 5), en 50 g</td>
-                    <td>15,20</td>
-                    <td>16,60</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Solelhal (seau), en 120 g</td>
-                    <td>32,00</td>
-                    <td>34,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Stanley Maxx, en 20 g</td>
-                    <td>4,80</td>
-                    <td>5,40</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Stanley Maxx, en 45 g</td>
-                    <td>10,80</td>
-                    <td>12,15</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Stanley Maxx, en 150 g</td>
-                    <td>36,00</td>
-                    <td>40,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Stanley Maxx, en 65 g</td>
-                    <td>15,60</td>
-                    <td>17,55</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Stanley maxx (blague), en 30 g</td>
-                    <td>7,20</td>
-                    <td>8,10</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Stanley maxx menthol, en 65 g</td>
-                    <td>15,60</td>
-                    <td>17,55</td>
-                    </tr>
-                
-                <tr>
-                    <td>LOGISTA France n°01</td>
-                    <td>Van Dyck (par 5), en 50 g</td>
-                    <td>14,50</td>
-                    <td>15,90</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>1855 Erik Peter's blend, en 50 g</td>
-                    <td>25,00</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>1897 Erik Poul's blend, en 50 g</td>
-                    <td>25,00</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>1957 Erik Michael's blend, en 50 g</td>
-                    <td>25,00</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>1982 Centennial blend, en 50 g</td>
-                    <td>25,00</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Alsbo Black, en 50 g</td>
-                    <td>16,50</td>
-                    <td>16,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Alsbo Bronze, en 50 g</td>
-                    <td>16,50</td>
-                    <td>16,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Alsbo Gold, en 50 g</td>
-                    <td>16,50</td>
-                    <td>16,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Alsbo Ruby, en 50 g</td>
-                    <td>16,50</td>
-                    <td>16,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Alsbo Silver, en 50 g</td>
-                    <td>16,50</td>
-                    <td>16,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Alsbo Sungold, en 50 g</td>
-                    <td>16,50</td>
-                    <td>16,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Aran Mixture, en 40 g</td>
-                    <td>16,00</td>
-                    <td>16,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Bronze, en 50 g</td>
-                    <td>14,50</td>
-                    <td>14,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Edition limitée 2013, en 100 g</td>
-                    <td>19,50</td>
-                    <td>19,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Edition limitée 2014, en 100 g</td>
-                    <td>19,50</td>
-                    <td>19,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Licorice, en 30 g</td>
-                    <td>6,60</td>
-                    <td>6,60</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Orange, en 50 g</td>
-                    <td>14,50</td>
-                    <td>14,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Raw blend, en 40 g</td>
-                    <td>8,60</td>
-                    <td>8,60</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Ruby, en 50 g</td>
-                    <td>14,50</td>
-                    <td>14,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Borkum Riff Sungold, en 50 g</td>
-                    <td>14,50</td>
-                    <td>14,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Connemara Black, en 40 g</td>
-                    <td>16,00</td>
-                    <td>16,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Connoisseur's Choice, en 50 g</td>
-                    <td>26,50</td>
-                    <td>26,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Davidoff Danish mixture, en 50 g</td>
-                    <td>21,00</td>
-                    <td>21,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Davidoff English mixture, en 50 g</td>
-                    <td>21,00</td>
-                    <td>21,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Davidoff Flake medaillons, en 50 g</td>
-                    <td>23,50</td>
-                    <td>23,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Davidoff Green mixture, en 50 g</td>
-                    <td>13,50</td>
-                    <td>13,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Davidoff Royalty 100 % tabac, en 50 g</td>
-                    <td>21,00</td>
-                    <td>21,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Davidoff Scottish mixture, en 50 g</td>
-                    <td>21,00</td>
-                    <td>21,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>De Luxe Mixture, en 50 g</td>
-                    <td>26,50</td>
-                    <td>26,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Irish Cask, en 50 g</td>
-                    <td>26,50</td>
-                    <td>26,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Irish Dew, en 40 g</td>
-                    <td>16,00</td>
-                    <td>16,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Irish Flake, en 50 g</td>
-                    <td>26,50</td>
-                    <td>26,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Kings Crown Mixture, en 40 g</td>
-                    <td>10,00</td>
-                    <td>10,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Larsen Carmin, en 50 g</td>
-                    <td>17,50</td>
-                    <td>17,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Larsen Edition 2013, en 100 g</td>
-                    <td>35,00</td>
-                    <td>35,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Larsen Golden, en 50 g</td>
-                    <td>17,50</td>
-                    <td>17,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Larsen Unique, en 50 g</td>
-                    <td>17,50</td>
-                    <td>17,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Old Dublin, en 50 g</td>
-                    <td>26,50</td>
-                    <td>26,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Orlik Kentucky bird, en 100 g</td>
-                    <td>35,00</td>
-                    <td>35,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Orlik Kentucky bird, en 50 g</td>
-                    <td>17,50</td>
-                    <td>17,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Sherlock Holmes, en 50 g</td>
-                    <td>26,50</td>
-                    <td>26,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Stanwell Valley, en 50 g</td>
-                    <td>17,00</td>
-                    <td>17,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>University Flake, en 50 g</td>
-                    <td>26,50</td>
-                    <td>26,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Von Eicken Rosebud, en 100 g</td>
-                    <td>19,00</td>
-                    <td>19,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>DAVIDOFF OF GENEVA France n°07</td>
-                    <td>Wild Atlantic Mixture, en 40 g</td>
-                    <td>16,00</td>
-                    <td>16,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>Blend & Choice Royal, en 40 g</td>
-                    <td>13,70</td>
-                    <td>68,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>Carolina rose, en 100 g</td>
-                    <td>51,40</td>
-                    <td>51,40</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>CELLINI, en 50 g</td>
-                    <td>16,90</td>
-                    <td>84,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>Danish Black v., en 40 g</td>
-                    <td>13,40</td>
-                    <td>67,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>Holger Danske B.B., en 40 g</td>
-                    <td>13,70</td>
-                    <td>68,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>Poul Winslow n°1 , en 100 g</td>
-                    <td>51,90</td>
-                    <td>51,90</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>Sans souci, en 50 g</td>
-                    <td>94,50</td>
-                    <td>94,50</td>
-                    </tr>
-                
-                <tr>
-                    <td>BUTZ CHOQUIN N°19</td>
-                    <td>Sémois grosse coupe sans arôme, en 120 g</td>
-                    <td>38,40</td>
-                    <td>76,80</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill Durbar (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill Early morning (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill Elisabethan Mixture (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill London Mixture (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill My Mixture (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill Night Cap (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill Ready Rubbed (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill Royal Yacht Mixture (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Dunhill Standard Mixture (boite), en 50 g</td>
-                    <td>24,00</td>
-                    <td>24,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Robert Lewis Orcilla Mixture (pot), en 50 g</td>
-                    <td>18,01</td>
-                    <td>18,01</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Robert Mc Connel Cruise Line (pot), en 100 g</td>
-                    <td>42,01</td>
-                    <td>42,01</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Balkan Flake (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Best Brown Flake (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Celtic Talisman (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Commonwealth (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Full Virginia Flake (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Grousemore (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Perfection Mixture (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Scotch Cut Mixture (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Skiff Mixture (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Squadrom Leader (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith St James (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>EUROTAB France N°43</td>
-                    <td>Samuel Gawith Westmorland Mixture (boite), en 50 g</td>
-                    <td>20,00</td>
-                    <td>20,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>CHAPUIS COMOY ET CIE N°89</td>
-                    <td>Chacom n° 1, en 50 g</td>
-                    <td>23,50</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>CHAPUIS COMOY ET CIE N°89</td>
-                    <td>Chacom n° 2, en 50 g</td>
-                    <td>23,50</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>CHAPUIS COMOY ET CIE N°89</td>
-                    <td>Chacom n° 3, en 50 g  </td>
-                    <td>23,50</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>CHAPUIS COMOY ET CIE N°89</td>
-                    <td>Chacom n° 4, en 50 g  </td>
-                    <td>23,50</td>
-                    <td>25,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>CHAPUIS COMOY ET CIE N°89</td>
-                    <td>Chacom n° 5, en 50 g  </td>
-                    <td>25,00</td>
-                    <td>26,00</td>
-                    </tr>
-                
-                <tr>
-                    <td>CHAPUIS COMOY ET CIE N°89</td>
-                    <td>Chacom n° 6, en 50 g </td>
-                    <td>25,00</td>
-                    <td>26,00</td>
-                    </tr>
-                
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">tabacs à pipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">à propos</a>
+          </li>
+        </ul>
 
-                </tbody>
-            </table>
+      </div>
+    </nav>
 
 
-        </div>
+    <h1>Prix des tabacs à pipe en France</h1>
+    <h3>Dernière mise à jour : 1er mars 2020</h3>
+    <p>Données extraites de : <a
+        href="https://www.douane.gouv.fr/la-douane/opendata/categories/tabacs-manufactures/homologation-des-prix-arretes">https://www.douane.gouv.fr/la-douane/opendata/categories/tabacs-manufactures/homologation-des-prix-arretes</a>
+    </p>
+
+    <div class="row">
+      <table id="data" class="display" style="width:100%">
+        <thead>
+          <tr>
+            <th>Fournisseur</th>
+            <th>Nom</th>
+            <th>Ancien prix</th>
+            <th>Nouveau Prix</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Camel Pipe Tobacco Coupe Large (boîte carrée), en 67 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Winston Pipe Tobacco Coupe Large (boîte carrée), en 35,5 g</td>
+            <td>10,00</td>
+            <td>10,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben ice coupe large (pot), en 50 g</td>
+            <td></td>
+            <td>12,50</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Amiral Big Ben coupe large, en 30 g</td>
+            <td>6,60</td>
+            <td>6,60</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben coupe large (blague), en 20 g</td>
+            <td>4,40</td>
+            <td>4,40</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben coupe large (blague), en 25 g</td>
+            <td>5,50</td>
+            <td>5,50</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben coupe large (blague), en 30 g</td>
+            <td>6,60</td>
+            <td>6,60</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben coupe large (pot), en 70 g</td>
+            <td>15,00</td>
+            <td>15,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben ice coupe large (blague), en 30 g</td>
+            <td>7,30</td>
+            <td>7,50</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben ice coupe large (pot), en 70 g</td>
+            <td>17,00</td>
+            <td>17,50</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Big Ben ice coupe large, en 30 g</td>
+            <td>7,30</td>
+            <td>7,50</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>7 Seas original blend, en 40 g</td>
+            <td>11,40</td>
+            <td>12,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>7 Seas regular blend, en 40 g</td>
+            <td>11,40</td>
+            <td>12,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>7 Seas Royal blend, en 40 g</td>
+            <td>11,40</td>
+            <td>12,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Bistro, en 30 g</td>
+            <td>7,50</td>
+            <td>8,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Bistro, en 40 g</td>
+            <td>10,00</td>
+            <td>10,65</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Bistro Noir, en 40 g</td>
+            <td>10,00</td>
+            <td>10,65</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Bistro Noir, en 30 g</td>
+            <td>7,50</td>
+            <td>8,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Bistro Rouge, en 30 g</td>
+            <td>7,50</td>
+            <td>8,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Brookfield n°1, en 50 g</td>
+            <td>12,30</td>
+            <td>13,20</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Chevalier, en 30 g</td>
+            <td>7,20</td>
+            <td>7,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Classic Loose Cut, en 50 g</td>
+            <td>14,50</td>
+            <td>15,40</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Golden blend's n°1, en 50 g</td>
+            <td>13,10</td>
+            <td>14,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Golden blend's n°2, en 50 g</td>
+            <td>13,10</td>
+            <td>14,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Golden blend's n°3, en 50 g</td>
+            <td>13,10</td>
+            <td>14,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>J B R Adventure, en 50 g</td>
+            <td>12,30</td>
+            <td>13,20</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Original Choice tabac à pipe, en 40 g</td>
+            <td>14,50</td>
+            <td>15,10</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Radford's Caribbean blend, en 50 g</td>
+            <td>12,40</td>
+            <td>13,30</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Radford's Scottish blend, en 50 g</td>
+            <td>12,40</td>
+            <td>13,30</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Thomas Radford Sunday's Fantasy, en 50 g</td>
+            <td>15,50</td>
+            <td>16,30</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>1637 coupe large, en 40 g</td>
+            <td>11,40</td>
+            <td>11,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>1637 coupe large en blague, en 40 g</td>
+            <td>11,40</td>
+            <td>11,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Amphora full, en 50 g</td>
+            <td>15,00</td>
+            <td>15,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Amsterdamer, en 40 g</td>
+            <td>11,60</td>
+            <td>12,20</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Backwoods Blue, en 30 g</td>
+            <td>6,00</td>
+            <td>6,40</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Backwoods Red, en 150 g</td>
+            <td>30,00</td>
+            <td>32,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Backwoods Red, en 30 g</td>
+            <td>6,00</td>
+            <td>6,40</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Burton Red pipe tobacco, en 80 g</td>
+            <td>16,80</td>
+            <td>17,60</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Burton Red pipe tobacco, en 30 g</td>
+            <td>6,30</td>
+            <td>6,60</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Caporal (blague), en 40 g</td>
+            <td>11,60</td>
+            <td>12,20</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Caporal export, en 40 g</td>
+            <td>12,90</td>
+            <td>13,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Clan Hollandia, en 50 g</td>
+            <td>13,40</td>
+            <td>14,70</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Clan original (par 5), en 30 g</td>
+            <td>9,00</td>
+            <td>9,85</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Clan original (par 5), en 50 g</td>
+            <td>15,00</td>
+            <td>16,40</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Clan Tradition, en 50 g</td>
+            <td>13,50</td>
+            <td>14,90</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Frérot blond l'Authentique, en 120 g</td>
+            <td>27,00</td>
+            <td>30,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Le Supérieur, en 40 g</td>
+            <td>12,90</td>
+            <td>13,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Saint Claude, en 40 g</td>
+            <td>13,00</td>
+            <td>13,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Scaferlati bleu (blague), en 40 g</td>
+            <td>13,00</td>
+            <td>13,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Scaferlati vert (blague), en 40 g</td>
+            <td>13,00</td>
+            <td>13,80</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Schippers speciaal (par 5), en 50 g</td>
+            <td>15,20</td>
+            <td>16,60</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Solelhal (seau), en 120 g</td>
+            <td>32,00</td>
+            <td>34,00</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Stanley Maxx, en 20 g</td>
+            <td>4,80</td>
+            <td>5,40</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Stanley Maxx, en 45 g</td>
+            <td>10,80</td>
+            <td>12,15</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Stanley Maxx, en 150 g</td>
+            <td>36,00</td>
+            <td>40,50</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Stanley Maxx, en 65 g</td>
+            <td>15,60</td>
+            <td>17,55</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Stanley maxx (blague), en 30 g</td>
+            <td>7,20</td>
+            <td>8,10</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Stanley maxx menthol, en 65 g</td>
+            <td>15,60</td>
+            <td>17,55</td>
+            </tr>
+          
+          <tr>
+            <td>LOGISTA France n°01</td>
+            <td>Van Dyck (par 5), en 50 g</td>
+            <td>14,50</td>
+            <td>15,90</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>1855 Erik Peter's blend, en 50 g</td>
+            <td>25,00</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>1897 Erik Poul's blend, en 50 g</td>
+            <td>25,00</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>1957 Erik Michael's blend, en 50 g</td>
+            <td>25,00</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>1982 Centennial blend, en 50 g</td>
+            <td>25,00</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Alsbo Black, en 50 g</td>
+            <td>16,50</td>
+            <td>16,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Alsbo Bronze, en 50 g</td>
+            <td>16,50</td>
+            <td>16,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Alsbo Gold, en 50 g</td>
+            <td>16,50</td>
+            <td>16,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Alsbo Ruby, en 50 g</td>
+            <td>16,50</td>
+            <td>16,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Alsbo Silver, en 50 g</td>
+            <td>16,50</td>
+            <td>16,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Alsbo Sungold, en 50 g</td>
+            <td>16,50</td>
+            <td>16,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Aran Mixture, en 40 g</td>
+            <td>16,00</td>
+            <td>16,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Bronze, en 50 g</td>
+            <td>14,50</td>
+            <td>14,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Edition limitée 2013, en 100 g</td>
+            <td>19,50</td>
+            <td>19,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Edition limitée 2014, en 100 g</td>
+            <td>19,50</td>
+            <td>19,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Licorice, en 30 g</td>
+            <td>6,60</td>
+            <td>6,60</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Orange, en 50 g</td>
+            <td>14,50</td>
+            <td>14,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Raw blend, en 40 g</td>
+            <td>8,60</td>
+            <td>8,60</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Ruby, en 50 g</td>
+            <td>14,50</td>
+            <td>14,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Borkum Riff Sungold, en 50 g</td>
+            <td>14,50</td>
+            <td>14,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Connemara Black, en 40 g</td>
+            <td>16,00</td>
+            <td>16,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Connoisseur's Choice, en 50 g</td>
+            <td>26,50</td>
+            <td>26,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Davidoff Danish mixture, en 50 g</td>
+            <td>21,00</td>
+            <td>21,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Davidoff English mixture, en 50 g</td>
+            <td>21,00</td>
+            <td>21,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Davidoff Flake medaillons, en 50 g</td>
+            <td>23,50</td>
+            <td>23,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Davidoff Green mixture, en 50 g</td>
+            <td>13,50</td>
+            <td>13,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Davidoff Royalty 100 % tabac, en 50 g</td>
+            <td>21,00</td>
+            <td>21,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Davidoff Scottish mixture, en 50 g</td>
+            <td>21,00</td>
+            <td>21,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>De Luxe Mixture, en 50 g</td>
+            <td>26,50</td>
+            <td>26,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Irish Cask, en 50 g</td>
+            <td>26,50</td>
+            <td>26,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Irish Dew, en 40 g</td>
+            <td>16,00</td>
+            <td>16,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Irish Flake, en 50 g</td>
+            <td>26,50</td>
+            <td>26,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Kings Crown Mixture, en 40 g</td>
+            <td>10,00</td>
+            <td>10,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Larsen Carmin, en 50 g</td>
+            <td>17,50</td>
+            <td>17,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Larsen Edition 2013, en 100 g</td>
+            <td>35,00</td>
+            <td>35,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Larsen Golden, en 50 g</td>
+            <td>17,50</td>
+            <td>17,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Larsen Unique, en 50 g</td>
+            <td>17,50</td>
+            <td>17,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Old Dublin, en 50 g</td>
+            <td>26,50</td>
+            <td>26,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Orlik Kentucky bird, en 100 g</td>
+            <td>35,00</td>
+            <td>35,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Orlik Kentucky bird, en 50 g</td>
+            <td>17,50</td>
+            <td>17,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Sherlock Holmes, en 50 g</td>
+            <td>26,50</td>
+            <td>26,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Stanwell Valley, en 50 g</td>
+            <td>17,00</td>
+            <td>17,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>University Flake, en 50 g</td>
+            <td>26,50</td>
+            <td>26,50</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Von Eicken Rosebud, en 100 g</td>
+            <td>19,00</td>
+            <td>19,00</td>
+            </tr>
+          
+          <tr>
+            <td>DAVIDOFF OF GENEVA France n°07</td>
+            <td>Wild Atlantic Mixture, en 40 g</td>
+            <td>16,00</td>
+            <td>16,00</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>Blend & Choice Royal, en 40 g</td>
+            <td>13,70</td>
+            <td>13,70</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>Carolina rose, en 100 g</td>
+            <td>51,40</td>
+            <td>51,40</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>CELLINI, en 50 g</td>
+            <td>16,90</td>
+            <td>16,90</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>Danish Black v., en 40 g</td>
+            <td>13,40</td>
+            <td>13,40</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>Holger Danske B.B., en 40 g</td>
+            <td>13,70</td>
+            <td>13,70</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>Poul Winslow n°1 , en 100 g</td>
+            <td>51,90</td>
+            <td>51,90</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>Sans souci, en 50 g</td>
+            <td>18,90</td>
+            <td>18,90</td>
+            </tr>
+          
+          <tr>
+            <td>BUTZ CHOQUIN N°19</td>
+            <td>Sémois grosse coupe sans arôme, en 120 g</td>
+            <td>38,40</td>
+            <td>38,40</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill Durbar (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill Early morning (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill Elisabethan Mixture (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill London Mixture (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill My Mixture (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill Night Cap (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill Ready Rubbed (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill Royal Yacht Mixture (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Dunhill Standard Mixture (boite), en 50 g</td>
+            <td>24,00</td>
+            <td>24,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Robert Lewis Orcilla Mixture (pot), en 50 g</td>
+            <td>18,01</td>
+            <td>18,01</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Robert Mc Connel Cruise Line (pot), en 100 g</td>
+            <td>42,01</td>
+            <td>42,01</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Balkan Flake (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Best Brown Flake (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Celtic Talisman (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Commonwealth (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Full Virginia Flake (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Grousemore (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Perfection Mixture (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Scotch Cut Mixture (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Skiff Mixture (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Squadrom Leader (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith St James (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>EUROTAB France N°43</td>
+            <td>Samuel Gawith Westmorland Mixture (boite), en 50 g</td>
+            <td>20,00</td>
+            <td>20,00</td>
+            </tr>
+          
+          <tr>
+            <td>CHAPUIS COMOY ET CIE N°89</td>
+            <td>Chacom n° 1, en 50 g</td>
+            <td>23,50</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>CHAPUIS COMOY ET CIE N°89</td>
+            <td>Chacom n° 2, en 50 g</td>
+            <td>23,50</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>CHAPUIS COMOY ET CIE N°89</td>
+            <td>Chacom n° 3, en 50 g  </td>
+            <td>23,50</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>CHAPUIS COMOY ET CIE N°89</td>
+            <td>Chacom n° 4, en 50 g  </td>
+            <td>23,50</td>
+            <td>25,00</td>
+            </tr>
+          
+          <tr>
+            <td>CHAPUIS COMOY ET CIE N°89</td>
+            <td>Chacom n° 5, en 50 g  </td>
+            <td>25,00</td>
+            <td>26,00</td>
+            </tr>
+          
+          <tr>
+            <td>CHAPUIS COMOY ET CIE N°89</td>
+            <td>Chacom n° 6, en 50 g </td>
+            <td>25,00</td>
+            <td>26,00</td>
+            </tr>
+          
+          <tr>
+            <td>ALBANA TOBACCO N°119</td>
+            <td>Bentley Pipe Tobacco The Classic One (Boite), en 50 g</td>
+            <td>32,50</td>
+            <td>32,50</td>
+            </tr>
+          
+          <tr>
+            <td>ALBANA TOBACCO N°119</td>
+            <td>Bentley Pipe Tobacco The London Carmine (Boite), en 50 g</td>
+            <td>32,50</td>
+            <td>32,50</td>
+            </tr>
+          
+          <tr>
+            <td>ALBANA TOBACCO N°119</td>
+            <td>Bentley Pipe Tobacco The Oriental Amber (Boite), en 50 g</td>
+            <td>32,50</td>
+            <td>32,50</td>
+            </tr>
+          
+          <tr>
+            <td>ALBANA TOBACCO N°119</td>
+            <td>Bentley Pipe Tobacco The planters purpure (Boite), en 50 g</td>
+            <td>32,50</td>
+            <td>32,50</td>
+            </tr>
+          
+          <tr>
+            <td>ALBANA TOBACCO N°119</td>
+            <td>Bentley Pipe Tobacco The Royal Gold (Boite), en 50 g</td>
+            <td>32,50</td>
+            <td>32,50</td>
+            </tr>
+          
+          <tr>
+            <td>ALBANA TOBACCO N°119</td>
+            <td>Bentley Pipe Tobacco The Virginia Ruby (Boite), en 50 g</td>
+            <td>32,50</td>
+            <td>32,50</td>
+            </tr>
+          
+
+        </tbody>
+      </table>
+
     </div>
+    <p><small>Fumer est dangereux pour la santé.</small></p>
+  </div>
 
-    <script>
-        $(document).ready(function () {
-            $('#data').DataTable();
-        });
-    </script>
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable({ "pageLength": 50 });
+    });
+  </script>
 </body>
 
 </html>
